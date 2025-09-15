@@ -10,7 +10,6 @@ public class task1 {
         int size = MPI.COMM_WORLD.Size();
         int message = myrank;
         int TAG = 0;
-        Status status = null;
 
         // четные ранги отправляют сообщение
         if ((myrank % 2) == 0) {
